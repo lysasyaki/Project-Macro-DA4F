@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ProjectMacro</string>
+    //get started, sign in, sign up
+    <string name="btn_Signin">Sign In</string>
+    <string name="btn_Signup">Sign Up</string>
+    <string name="text1">We are ready to help and solve the problems you have</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".GetStarted">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="55dp"
+        android:text="@string/btn_Signin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:backgroundTint="@color/cream"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200dp"
+        android:minHeight="55dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/btn_Signup"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cream"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_signup"/>
+
+    <LinearLayout
+        android:id="@+id/indicatorsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signin"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/indicatorsContainer"
+        android:layout_marginBottom="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
