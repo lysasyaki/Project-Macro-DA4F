@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MassageSessionActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/men2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Theo Aldebaran S.Psi"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/LightBlue"
+        android:text="End Session"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="5dp"
+            android:hint="    Type a masage..."
+            android:textColor="@color/black"
+            android:background="@drawable/search"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="260dp"
+            android:background="@drawable/baseline_photo_camera_24"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="310dp"
+            android:background="@drawable/baseline_mic_24"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="@drawable/layout"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/men2" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/blue"
+            android:text="   Selamat siang bu Minjeong \n   Ada yang bisa dibantu"
+            android:textAlignment="textStart"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/blue"
+            android:text="   Selamat siang Dokter \n   Saya ingin menanyakan \n   bagaimana saya menangani \n   anak saya yang suka \n   berperilaku kasar kepada \n   saya maupun dengan \n   teman-temannya? "
+            android:textAlignment="textStart"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/men2" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/blue"
+            android:text="   Baik bu Minjeong \n   Untuk menangani anak yang \n   kasar ibu perlu menanyakan
+            \n   penyebab dibalik perilakunya, \n   berikan contoh yang positif
+            \n   baik dari ayah maupun ibunya,\n   mengajari anak untuk bisa \n   berempati kepada orang lain.
+            \n   Berikan lingkungan positif dan \n   pengertian yang mudah \n   dimengerti  agar anak ibu bisa
+            \n   perlahan mereda emosi dan \n   sikap kasarnya."
+            android:textAlignment="textStart"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

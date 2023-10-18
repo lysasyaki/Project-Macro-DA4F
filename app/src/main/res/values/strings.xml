@@ -4,4 +4,25 @@
     <string name="btn_Signin">Sign In</string>
     <string name="btn_Signup">Sign Up</string>
     <string name="text1">We are ready to help and solve the problems you have</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_history">History</string>
+    <string name="title_home">Home Page</string>
+    <string name="title_profile">Profile</string>
+    <string name="text2">Verify by email to activate your account, an email will be sent as soon as possible. Please wait and check your email regularly.</string>
+    <string name="psikolog_name">\n</string>
+    <string name="ulasan" />
+    <string name="konsultasi">Consultation</string>
+    <string name="text3">welcome to ....... mobile \n \nPLEASE READ ALL THE THERMS AND CONDITIONS OF USE BELOW CAREFULLY AND ATTENTIVELY BEFORE USING ANY FEATURES AND/OR SERVICES AVAILABLE THE ..... mobile</string>
+    <string name="text4">1. These terms and conditions of use constitute an agreement between the user ("user") and the application maker as a provider of counseling services and parenting solutions with the (nama apl) mobile (nama apl) application. These terms and conditions of use also regulate the management of personal data in (nama apl)</string>
+    <string name="text5">2. By agreeing to these terms and conditions of use, the user also agrees to the additional terms of use on (nama apl)  and its amendments whitch are an integral parts of these terms and conditions of use</string>
+    <string name="text6">Terms &amp; \nconditions</string>
+    <string name="about_lonsul">Consultations
+
+arenting consultation with a child psychologist</string>
+    <string name="about_kelas">Parenting Class
+
+Parenting class and seminar with a child psychologist</string>
+    <string name="about_artikel">Parenting Encyclopedia
+
+Collection of parenting material articles for parents</string>
 </resources>

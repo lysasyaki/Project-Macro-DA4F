@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    tools:context=".Sumarry">
+
+    <TextView
+        android:id="@+id/text_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Payment"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Summary"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="-15dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title1"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/baseline_cancel_24"
+        app:layout_constraintBottom_toBottomOf="@id/text_title1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="558dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/summary_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="292dp"
+            android:layout_height="253dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/transaction_code"
+            android:paddingLeft="90dp"
+            android:paddingTop="20dp"
+            android:text="transaction code"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="138dp"
+            android:layout_marginTop="100dp"
+            android:text="082413723372"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="140dp"
+            android:text="Item"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="140dp"
+            android:paddingLeft="25dp"
+            android:text="1 Session"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="109dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="170dp"
+            android:text="Total Payment"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="215dp"
+            android:paddingLeft="10dp"
+            android:text="Rp 30.000,00"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="292dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="430dp"
+            android:backgroundTint="@color/blue"
+            android:text="Finish Payment"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
