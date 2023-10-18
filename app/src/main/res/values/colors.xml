@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="yellow">#F0DE36</color>
-    <color name="blue">#2B3467</color>
+    <color name="blue">#023E84</color>
     <color name="cream">#FFF3DA</color>
     <color name="lightYellow">#FFCC70</color>
     <color name="black">#000000</color>
     <color name="white">#E1E1E1</color>
+    <color name="LightBlue">#0077B6</color>
+    <color name="sign_in">#22668D</color>
+    <color name="sign_in2">#8022668D</color>
+    <color name="pudar">#D3FFFFFF</color>
+    <color name="kuning">#FDD835</color>
+    <color name="merah">#CD1212</color>
 </resources>

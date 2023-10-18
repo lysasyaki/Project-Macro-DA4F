@@ -6,6 +6,6 @@
     </style>
 
     <style name="Theme.ProjectMacro" parent="Base.Theme.ProjectMacro">
-        <item name="android:statusBarColor">@color/yellow</item>
+        <item name="android:statusBarColor">@color/LightBlue</item>
     </style>
 </resources>

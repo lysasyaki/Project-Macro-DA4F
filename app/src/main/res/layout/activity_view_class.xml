@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ViewClass">
+
+    <TextView
+        android:id="@+id/viewclass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_horizontal"
+        android:text="Seminar "
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diskusi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:text="Diskusi"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewclass" />
+
+    <ImageView
+        android:id="@+id/btn_cancel"
+        android:layout_width="45dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_cancel_24" />
+
+    <FrameLayout
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diskusi">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teks_isi1"
+                    android:layout_width="292dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="“kedekatan anak dan orang tua
+                     menentukan masa depan anak”"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="149dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/img_3" />
+
+                <TextView
+                    android:id="@+id/teks_isi2"
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Orangtua adalah seorang figur bagi seorang anak. Orangtua berperan penting dalam tumbuh kembang anak hingga dewasa. Namun orangtua zaman sekarang kurang dapat memahami kedekatan anak dan orangtua, untuk ini kegiatan seminar ini dilaksanakan. semniar diskusi kali ini bertemakan “Kedepakatan Anak dan Orantua Menentukan Masa Depan Anak”."
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/teks_isi3"
+                    android:layout_width="332dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Kegiatan ini dilaksanakan secara hybrid dengan berbagai ahli dibidang konsultan anak. Dengan ketentuan waktu:"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/teks_isi4"
+                    android:layout_width="238dp"
+                    android:layout_height="69dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Tanggal : 15 Oktober 2023                      Waktu    : 14.00 WIB -  selesai                      Tempat  : Aula Gedung pertemuan 1                               Zoom     :"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/teks_isi5"
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Kegiatan ini dilaksanakan secara langsung dengan sesi online dan offline pendaftaran dapat dilakukan melalui link pendeaftaran berikut: https://FormRegistrastionSemDis2023"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="Informasi lanjut melalui:                                                       Whatsapp : 08123847563                                           Instagram : @konsultananak"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

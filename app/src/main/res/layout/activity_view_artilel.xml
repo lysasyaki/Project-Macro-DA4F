@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewArtikel"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/image_cancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_cancel_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mengatasi Kecanduan Gadget Pada Anak"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_cancel"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_shape3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_cancel">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="242dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/artikel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginEnd="30dp"
+            android:text=" Gadget sendiri dapat berupa komputer atau laptop, tablet PC, dan juga telepon seluler atau smartphone. Gadget pada era globalisasi sangatlah gampang dijumpai, sebab hampir semua kalangan masyarakat memiliki gadget. Pasalnya gadget tidak hanya beredar di kalangan remaja (usia 12-21 tahun) dan dewasa atau lanjut usia (usia 60 tahun ke atas), tetapi juga beredar di kalangan anak-anak (usia 7-11 tahun) dan ironisnya lagi gadget bukan barang asing untuk anak (usia 3-6) tahun yang seharusnya belum layak menggunakan gadget.
+Pengenalan gadget pada anak usia dini sangat penting karena dapat membantu menstimulasi imajinasi, membantu memperbaiki kemampuan mendengar, mempelajari suara-suara dan bicara, serta dapat membantu daya pikir strategi anak, namun tetap pada pengawasan orangtua. Namun, gadget juga meninggalkan sejumlah dampak negatif antara lain dapat menghambat perkembangan motorik anak, menghambat perkembangan bahasa dan sosial anak, menimbulkan masalah perilaku, serta menimbulkan masalah kesehatan fisik."
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlue"
+    tools:context=".ArticelActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Encyclopedia"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/search"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        app:layout_constraintVertical_bias="0.49"
+        app:queryHint="Search Here ...." />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/cancel"
+        app:layout_constraintBottom_toBottomOf="@id/text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        android:id="@+id/back"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/notification"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/text_title"
+        app:layout_constraintVertical_bias="0.515"
+        android:id="@+id/pesan"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userRecyler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:padding="20dp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="17dp" />
+
+        <ImageButton
+            android:layout_width="289dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/layoutblue"
+            android:id="@+id/ency1"/>
+
+        <TextView
+            android:id="@+id/class1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="50dp"
+            android:text="seminar diskusi dengan tema “kedekatan anak dan orang tua menentukan masa depan anak”"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/photo1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <Button
+            android:id="@+id/btn_baca1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="80dp"
+            android:textSize="11dp"
+            android:backgroundTint="@color/LightBlue"
+            android:text="Baca Selengkapnya > "
+            android:textColor="@color/pudar" />
+
+        <ImageButton
+            android:layout_width="289dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/layoutblue"
+            android:id="@+id/ency2"/>
+
+        <TextView
+            android:id="@+id/txt_ency"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="170dp"
+            android:text="seminar diskusi dengan tema “kedekatan anak dan orang tua menentukan masa depan anak”"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/btn_baca_seleng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="210dp"
+            android:text="Baca Selengkapnya > "
+            android:textColor="@color/pudar" />
+
+        <ImageButton
+            android:layout_width="289dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="270dp"
+            android:background="@drawable/layoutblue"
+            android:id="@+id/ency3"/>
+
+        <TextView
+            android:id="@+id/text_ency"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="290dp"
+            android:text="seminar diskusi dengan tema “kedekatan anak dan orang tua menentukan masa depan anak”"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/photo3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="295dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/btn_baca3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="330dp"
+            android:text="Baca Selengkapnya > "
+            android:textColor="@color/pudar" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
